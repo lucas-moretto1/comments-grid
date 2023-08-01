@@ -1,0 +1,66 @@
+@media (max-width: 1200px) {
+    .section .comment.first {
+        background-position-x: 370px;
+    }
+
+    .section .comment .info .title {
+        font-size: 2rem;
+    }
+    
+    .section .comment .info .description { 
+        font-weight: 500;
+        font-size: 1.3rem;
+    }
+
+    .section .comment.first, .section .comment.fifth {
+        width: 530px;
+    }
+
+    .section .comment.second, .section .comment.third, .section .comment.fourth{
+        width: 200px;
+    }
+
+    .section .comment.second .info .title, .section .comment.third .info .title, .section .comment.fourth .info .title{
+        font-size: 1.7rem;
+    }
+
+    .section .comment.second .info .description, .section .comment.third .info .description, .section .comment.fourth .info .description{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media (max-width: 975px){
+    .section {
+        margin-top: 20px;
+        height: 100vh;
+        grid:   "first"
+                "second"
+                "fourth" 
+                "fifth" 
+                "third" ;
+    }
+
+    .section .comment.first .info .title, .section .comment.second .info .title, .section .comment.third .info .title, .section .comment.fourth .info .title, .section .comment.fifth .info .title{
+        font-size: 2.5rem;
+    }
+
+    .section .comment.first .info .description, .section .comment.second .info .description, .section .comment.third .info .description, .section .comment.fourth .info .description, .section .comment.fifth .indo .description{
+        font-size: 1.3rem;
+    }
+
+    .section .comment.first {
+        background: url(../images/bg-pattern-quotation.svg) no-repeat;
+        background-color: var(--violeta-card);
+        background-position-x: 200px;
+        height: 420px;
+    }
+
+    .section .comment.second {
+        height: 220px;
+    }
+
+    .section .comment.first, .section .comment.second, .section .comment.third, .section .comment.fourth, .section .comment.fifth {
+        width: 340px;
+    }
+}

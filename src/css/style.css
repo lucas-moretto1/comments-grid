@@ -1,0 +1,177 @@
+html {
+    font-size: 62.5%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: hsl(0, 0%, 81%);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 1.5rem;
+}
+
+.section {
+    display: grid;
+    grid: "first first second third" 260px
+          "fourth fifth fifth third" 260px;
+    grid-gap: 20px;
+}
+
+.section .comment {
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.section .comment .profile {
+    display: flex;
+    align-items: center;
+}
+
+.section .comment .profile img{
+    width: 25px;
+    border: solid 1px var(--text-color);
+    border-radius: 100%;
+}
+
+.section .comment .profile .pessoal {
+    margin-left: 12px;
+}
+
+.section .comment .profile .pessoal .name{
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.section .comment .profile .pessoal .verified{
+    font-weight: 500;
+    font-size: 1.09rem;
+}
+
+.section .comment .info .title {
+    color: var(--text-color);
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.section .comment .info .description { 
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+/* PRIMEIRO */
+
+.section .comment.first {
+    grid-area: first;
+    width: 600px;
+    background: url(../images/bg-pattern-quotation.svg) top no-repeat;
+    background-position-x: 410px;
+    background-color: var(--violeta-card);
+}
+
+.section .comment.first .profile .pessoal .name{
+    color: hsl(263, 55%, 95%);
+}
+
+.section .comment.first .profile .pessoal .verified {
+    color: hsl(263, 55%, 90%);
+}
+
+.section .comment.first .info .description {
+    color: hsl(263, 55%, 75%);
+}
+
+/* SEGUNDO */
+
+.section .comment.second {
+    grid-area: second;
+    width: 270px;
+    background-color: var(--grey-card);
+}
+
+.section .comment.second .profile .pessoal .name{
+    color: var(--text-color);
+}
+
+.section .comment.second .profile .pessoal .verified {
+    color: hsl(217, 19%, 70%);
+}
+
+.section .comment.second .info .description {
+    color: hsl(217, 19%, 70%);
+}
+
+/* TERCEIRO */
+
+.section .comment.third {
+    grid-area: third;
+    width: 270px;
+    background-color: var(--text-color);
+}
+
+.section .comment.third .profile .pessoal .name{
+    color: hsl(217, 19%, 30%);
+}
+
+.section .comment.third .profile .pessoal .verified {
+    color: hsl(217, 19%, 60%);
+}
+
+.section .comment.third .info .title {
+    color: hsl(217, 19%, 30%);
+}
+
+.section .comment.third .info .description {
+    color: hsl(217, 19%, 45%);
+}
+
+/* QUARTO */
+
+.section .comment.fourth {
+    grid-area: fourth;
+    width: 270px;
+    background-color: var(--text-color);
+}
+
+.section .comment.fourth .profile .pessoal .name{
+    color: hsl(217, 19%, 30%);
+}
+
+.section .comment.fourth .profile .pessoal .verified {
+    color: hsl(217, 19%, 60%);
+}
+
+.section .comment.fourth .info .title {
+    color: hsl(217, 19%, 40%);
+}
+
+.section .comment.fourth .info .description {
+    color: hsl(217, 19%, 55%);
+}
+
+/* QUINTO */
+
+.section .comment.fifth {
+    grid-area: fifth;
+    width: 600px;
+    background-color: var(--grey-bold);
+    color: var(--text-color);
+}
+
+.section .comment.fifth .profile .pessoal .name{
+    color: var(--text-color);
+}
+
+.section .comment.fifth .profile .pessoal .verified {
+    color: hsl(217, 19%, 60%);
+}
+
+.section .comment.fifth .info .title {
+    color: var(--text-color);
+}
+
+.section .comment.fifth .info .description {
+    color: hsl(217, 19%, 75%);
+}
+
